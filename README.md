@@ -35,7 +35,7 @@ Do not use root credentials or an admin user to run this.
 ### Install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/aws-iam-security-auditor.git
+git clone https://github.com/Mimic360/aws-iam-security-auditor.git
 cd aws-iam-security-auditor
 
 python -m venv venv
