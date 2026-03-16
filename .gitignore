@@ -11,6 +11,7 @@ __pycache__/
 
 # Report output
 output/
+audit_output.txt
 
 # OS files
 .DS_Store
