@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-03-16T22:59:50.595463",
+  "total_checks": 7,
+  "summary": {
+    "PASS": 4,
+    "FAIL": 3,
+    "WARN": 0
+  },
+  "findings": [
+    {
+      "check_name": "MFA Not Enabled",
+      "status": "FAIL",
+      "severity": "HIGH",
+      "affected_resources": [
+        "iam-auditor-bot",
+        "User1",
+        "User2",
+        "User3"
+      ],
+      "detail": "4 user(s) have no MFA device. A stolen password alone grants full access."
+    },
+    {
+      "check_name": "Inactive Users (90+ Days)",
+      "status": "PASS",
+      "severity": "MEDIUM",
+      "affected_resources": [],
+      "detail": "All users have logged in within the last 90 days."
+    },
+    {
+      "check_name": "Access Keys Not Rotated (90+ Days)",
+      "status": "PASS",
+      "severity": "HIGH",
+      "affected_resources": [],
+      "detail": "All active access keys are under 90 days old."
+    },
+    {
+      "check_name": "AdministratorAccess Policy Attached",
+      "status": "PASS",
+      "severity": "HIGH",
+      "affected_resources": [],
+      "detail": "No users or roles have AdministratorAccess attached."
+    },
+    {
+      "check_name": "Root Account Activity",
+      "status": "FAIL",
+      "severity": "HIGH",
+      "affected_resources": [
+        "<root_account>"
+      ],
+      "detail": "Root account has been used recently. Use a least-privilege IAM user for all operations instead."
+    },
+    {
+      "check_name": "Dual Access (Console + Programmatic)",
+      "status": "PASS",
+      "severity": "MEDIUM",
+      "affected_resources": [],
+      "detail": "No users hold both console and programmatic access."
+    },
+    {
+      "check_name": "Password Policy",
+      "status": "FAIL",
+      "severity": "MEDIUM",
+      "affected_resources": [
+        "account-level password policy"
+      ],
+      "detail": "No password policy configured. AWS enforces nothing by default."
+    }
+  ]
+}
