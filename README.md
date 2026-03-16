@@ -1,6 +1,6 @@
 # AWS IAM Security Auditor
 
-A Python CLI tool that audits AWS IAM configuration against CIS AWS Foundations Benchmark controls and least-privilege best practices. I built this because IAM misconfiguration — overly permissive roles, stale credentials, missing MFA — is one of the most common root causes of AWS account compromise, and it's largely preventable with basic automated checks.
+A Python CLI tool that audits AWS IAM configuration against CIS AWS Foundations Benchmark controls and least-privilege best practices. I built this because IAM misconfiguration overly permissive roles, stale credentials, missing MFA is one of the most common root causes of AWS account compromise, and it's largely preventable with basic automated checks.
 
 ---
 
